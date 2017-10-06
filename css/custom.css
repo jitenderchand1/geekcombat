@@ -1,0 +1,10 @@
+.field-content{
+    width: 100px;
+    text-align: center;
+    display: inline-block;
+}
+
+.field-content img{
+    width: 100%;
+}
+

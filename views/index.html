@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>INSPINIA | Main view</title>
+
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <link href="../css/animate.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/custom.css" rel="stylesheet">
+    <link href="../css/plugins/datapicker/datepicker3.css" rel="stylesheet">
+    <link href="../css/plugins/clockpicker/clockpicker.css" rel="stylesheet">
+</head>
+
+<body>
+
+<div id="wrapper">
+
+    <nav class="navbar-default navbar-static-side" role="navigation">
+        <div class="sidebar-collapse">
+            <ul class="nav metismenu" id="side-menu">
+                <li class="nav-header">
+                    <div class="dropdown profile-element text-center">
+                            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                            <div class="field-content"><img src="http://success-factor.s3.amazonaws.com/prod/profilePicFolder/68b9d178-a6ae-4337-944c-2f4ea2654bbf_jitender.chand1@tothenew.com.jpg"></div>
+                            <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold">Jitender Chand</strong>
+                             </span>  </span> </a>
+                    </div>
+                    <div class="logo-element">
+                        IN+
+                    </div>
+                </li>
+                <li class="active">
+                    <a href="index.html"><i class="fa fa-th-large"></i> <span class="nav-label">Cab Request</span></a>
+                </li>
+                <li>
+                    <a href="minor.html"><i class="fa fa-th-large"></i> <span class="nav-label">Cab Feedback</span> </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+
+    <div id="page-wrapper" class="gray-bg">
+        <div class="row border-bottom">
+            <nav class="navbar navbar-static-top white-bg" role="navigation" style="margin-bottom: 0">
+                <div class="navbar-header">
+                    <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
+                </div>
+                <ul class="nav navbar-top-links navbar-right">
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-sign-out"></i> Log out
+                        </a>
+                    </li>
+                </ul>
+
+            </nav>
+        </div>
+        <div class="wrapper wrapper-content animated fadeInRight">
+            <div class="row">
+                <div class="col-lg-7">
+                    <div class="ibox float-e-margins">
+                        <div class="ibox-title">
+                            <h5>Fill in Pickup Detail</h5>
+                            <div class="ibox-tools">
+                                <a class="collapse-link">
+                                    <i class="fa fa-chevron-up"></i>
+                                </a>
+
+                                <a class="close-link">
+                                    <i class="fa fa-times"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="ibox-content">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <form role="form">
+                                        <div class="form-group"><label>Pickup Date</label>
+                                            <div class="input-group date pickup">
+                                                <input type="text" placeholder="dd/mm/yyyy" class="form-control" value="">
+                                                <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                            </div>
+
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Pickup Time</label>
+                                            <div class="input-group clockpicker" data-autoclose="true">
+                                                <input type="text" class="form-control" value="09:30">
+                                                <span class="input-group-addon">
+                                                    <span class="fa fa-clock-o"></span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group"><label>Select Route</label> <input type="password" placeholder="Password" class="form-control"></div>
+                                        <div class="form-group clearfix">
+                                            <div>
+                                                <label>Number of Traveler</label>
+                                            </div>
+                                            <div class="row">
+                                            <div class="col-xs-8">
+                                                <select class="form-control m-b" name="account">
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                    <option>6</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-xs-4">
+                                                ( Optional )
+                                            </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <button class="btn btn-sm btn-primary m-t-n-xs" type="submit"><strong>Log in</strong></button>
+                                        </div>
+                                    </form>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div>
+                <strong>Copyright</strong> TTN Company &copy;2017
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Mainly scripts -->
+<script src="../js/jquery-3.1.1.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/plugins/metisMenu/jquery.metisMenu.js"></script>
+<script src="../js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+<!-- Custom and plugin javascript -->
+<script src="../js/inspinia.js"></script>
+<script src="../js/plugins/pace/pace.min.js"></script>
+<!-- Date picker -->
+<script src="../js/plugins/datapicker/bootstrap-datepicker.js"></script>
+<!-- Clock picker -->
+<script src="../js/plugins/clockpicker/clockpicker.js"></script>
+<script type="text/javascript">
+  $('.input-group.date.pickup').datepicker({
+    todayHighlight: true,
+    autoclose:true,
+    startDate: new Date()
+  });
+  $('.clockpicker').clockpicker();
+</script>
+
+</body>
+
+</html>
