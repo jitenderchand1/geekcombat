@@ -6,16 +6,18 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>INSPINIA | Main view</title>
+    <title>Cab Management  | Cab Request</title>
 
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link href="../font-awesome/css/font-awesome.css" rel="stylesheet">
-
+     <link href="../css/plugins/datapicker/datepicker3.css" rel="stylesheet">
+    <link href="../css/plugins/clockpicker/clockpicker.css" rel="stylesheet">
+    <!-- FooTable -->
+    <link href="../css/plugins/footable/footable.core.css" rel="stylesheet">   
     <link href="../css/animate.css" rel="stylesheet">
     <link href="../css/style.css" rel="stylesheet">
     <link href="../css/custom.css" rel="stylesheet">
-    <link href="../css/plugins/datapicker/datepicker3.css" rel="stylesheet">
-    <link href="../css/plugins/clockpicker/clockpicker.css" rel="stylesheet">
+    
 </head>
 
 <body>
@@ -37,10 +39,10 @@
                     </div>
                 </li>
                 <li class="active">
-                    <a href="index.html"><i class="fa fa-th-large"></i> <span class="nav-label">Cab Request</span></a>
+                    <a href="index.html"><i class="fa fa-car"></i> <span class="nav-label">Cab Request</span></a>
                 </li>
                 <li>
-                    <a href="minor.html"><i class="fa fa-th-large"></i> <span class="nav-label">Cab Feedback</span> </a>
+                    <a href="feedback.html"><i class="fa fa-edit"></i> <span class="nav-label">Cab Feedback</span> </a>
                 </li>
             </ul>
 
@@ -93,13 +95,13 @@
                                         <div class="form-group">
                                             <label>Pickup Time</label>
                                             <div class="input-group clockpicker" data-autoclose="true">
-                                                <input type="text" class="form-control" value="09:30">
+                                                <input type="text" class="form-control" placeholder="Select Time">
                                                 <span class="input-group-addon">
                                                     <span class="fa fa-clock-o"></span>
                                                 </span>
                                             </div>
                                         </div>
-                                        <div class="form-group"><label>Select Route</label> <input type="password" placeholder="Password" class="form-control"></div>
+                                        <div class="form-group"><label>Select Route</label> <input type="text" placeholder="type route name..." class="routeName form-control" /></div>
                                         <div class="form-group clearfix">
                                             <div>
                                                 <label>Number of Traveler</label>
@@ -121,7 +123,7 @@
                                             </div>
                                         </div>
                                         <div>
-                                            <button class="btn btn-sm btn-primary m-t-n-xs" type="submit"><strong>Log in</strong></button>
+                                            <button class="btn btn-sm btn-primary m-t-n-xs" type="submit"><strong>Book</strong></button>
                                         </div>
                                     </form>
                                 </div>
@@ -157,14 +159,15 @@
 <script src="../js/plugins/datapicker/bootstrap-datepicker.js"></script>
 <!-- Clock picker -->
 <script src="../js/plugins/clockpicker/clockpicker.js"></script>
-<script type="text/javascript">
-  $('.input-group.date.pickup').datepicker({
-    todayHighlight: true,
-    autoclose:true,
-    startDate: new Date()
-  });
-  $('.clockpicker').clockpicker();
-</script>
+<!-- Auto complete typeahead -->
+<script src="../js/plugins/typehead/bootstrap3-typeahead.min.js"></script>
+
+<!-- FooTable -->
+<script src="../js/plugins/footable/footable.all.min.js"></script>
+
+<!-- Custom code and plugin initialization -->
+<script type="text/javascript" src="../js/custom.js"></script>
+
 
 </body>
 
