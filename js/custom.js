@@ -3,6 +3,17 @@ $('.input-group.date.pickup').datepicker({
   autoclose:true,
   startDate: new Date()
 });
+
+$('.reportStartDate').datepicker({
+  todayHighlight: true,
+  autoclose:true
+});
+
+$('.reportEndDate').datepicker({
+  todayHighlight: true,
+  autoclose:true
+});
+
 $('.clockpicker').clockpicker({
   placement: 'bottom',
   align: 'left',
@@ -19,8 +30,10 @@ $('.routeName').typeahead({
   ]
 });
 
-$('.footable').footable({
-    "columns": [{
-      "sortable": false
-    }]
-});
+$('.dataTables-example').DataTable({
+                pageLength: 25,
+                responsive: true,
+                dom: '<"html5buttons"B>lTfgitp',
+                buttons: []
+
+            });
